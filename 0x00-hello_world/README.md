@@ -1,6 +1,4 @@
 ## 0x00. C - Hello, World
-_____
-<br>
 
 ### Compilation process in C        
 <br>
