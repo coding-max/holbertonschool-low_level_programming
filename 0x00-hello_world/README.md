@@ -4,7 +4,7 @@
 <br>
 
 ```
-                    sorce code (.c)
+                    source code (.c)
                          |
                          |
   PREPROCESSOR ---> expanded code (.i)
