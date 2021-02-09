@@ -9,7 +9,7 @@ void jack_bauer(void)
 	int h1, h2, m1, m2;
 	bool final = false;
 
-	for (h1 = 0; h1 < 3 && !final; h1 ++)
+	for (h1 = 0; h1 < 3 && !final; h1++)
 	{
 		for (h2 = 0; h2 < 10 && !final; h2++)
 		{
