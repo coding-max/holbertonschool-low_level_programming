@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - prints the alphabet.
  *
- * Return: Always 0.
+ *
  */
 void print_alphabet(void)
 {
@@ -12,6 +12,4 @@ void print_alphabet(void)
 	for (c = 'a' ; c <= 'z' ; c++)
 		_putchar(c);
 	_putchar('\n');
-
-	return (0);
 }
