@@ -9,13 +9,11 @@
 
 int main(void)
 {
-	long int i = 0;
+	long int i = 1;
 	long int i_anterior = 0;
 	long int temp;
-	int cont = 2;
+	int cont = 1;
 
-	printf("%ld, ", i);
-	i = 1;
 	while (cont < 50)
 	{
 		printf("%ld, ", i);
