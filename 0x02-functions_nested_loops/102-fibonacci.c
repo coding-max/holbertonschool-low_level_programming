@@ -10,11 +10,13 @@
 int main(void)
 {
 	long int i = 1;
-	long int i_anterior = 0;
+	long int i_anterior = 1;
 	long int temp;
 	int cont = 1;
 
-	while (cont < 50)
+	printf("%ld, ", i);
+	i = 2;
+	while (cont < 49)
 	{
 		printf("%ld, ", i);
 		temp = i;
