@@ -16,7 +16,7 @@ int main(void)
 	while (number != prime)
 	{
 		while ((number % prime) == 0)
-			number = (number % prime);
+			number = (number / prime);
 		prime++;
 	}
 	printf("%ld\n", number);
