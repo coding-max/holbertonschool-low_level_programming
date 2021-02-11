@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	long int original_number = 612852475146;
+	long int original_number = 612852475143;
 	long int number = original_number;
 	long int prime = 2;
 
