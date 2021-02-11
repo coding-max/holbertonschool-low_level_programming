@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-	int original_number = 612852475146;
-	int number = original_number;
-	int prime = 2;
+	long int original_number = 612852475146;
+	long int number = original_number;
+	long int prime = 2;
 
 	while (number != prime)
 	{
 		while ((number % prime) == 0)
-			number = (numer % prime);
+			number = (number % prime);
 		prime++;
 	}
-	return (prime);
+	printf("%ld\n", number);
+	return (0);
 }
