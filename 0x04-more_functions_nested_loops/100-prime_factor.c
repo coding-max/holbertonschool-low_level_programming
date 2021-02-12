@@ -19,5 +19,5 @@ int main(void)
 		prime++;
 	}
 	printf("%ld\n", number);
-	return (number);
+	return (0);
 }
