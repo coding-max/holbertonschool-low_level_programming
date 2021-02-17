@@ -7,27 +7,13 @@
  */
 void rev_string(char *s)
 {
-	int i = 0;
-	int size;
+	int i, j;
 
-	while (s[i] != '\0')
-		i++;
-	i--;
-	size = i;
-
-	char aux[size];
-
-	i = 0;
-	while (s[i] != '\0')
+	i = _strelen(s);
+	for(j = 0; j <= i; j++, i--)
 	{
-		aux[(size - i)] = s[i];
-		i++;
-	}
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		s[i] = aux[i];
-		i++;
+		aux = s[j];
+		s[j] = s[i];
+		s[i] = aux;
 	}
 }
