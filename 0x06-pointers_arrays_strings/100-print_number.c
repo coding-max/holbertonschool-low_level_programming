@@ -16,7 +16,7 @@ void print_number(int n)
 	{
 		num = -n;
 		_putchar('-');
-        }
+	}
 	/* recursion */
 	if (num / 10 != 0)
 		print_number(num / 10);
