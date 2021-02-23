@@ -10,11 +10,10 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int n = 1, i = 0, j = 0, exit;
+	int i = 0, j = 0, exit;
 	char *ptr;
 
-here_i_go_again:printf("xd\n");
-	j = 0;
+here_i_go_again:j = 0;
 	exit = 0;
 	for (; (haystack[i] != '\0'); i++)
 		if (haystack[i] == needle[j])
