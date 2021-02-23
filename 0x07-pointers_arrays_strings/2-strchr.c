@@ -15,7 +15,13 @@ char *_strchr(char *s, char c)
 	char *ptr;
 
 	if (!s)
-		return ('\0');
+		if (c == '\0')
+		{
+			ptr = &s;
+			return (ptr);
+		}
+		else
+			return ('\0');
 	for (i = 0; (s[i] != '\0'); i++)
 		if (s[i] == c)
 		{
