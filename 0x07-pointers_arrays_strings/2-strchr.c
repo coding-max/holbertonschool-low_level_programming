@@ -14,14 +14,17 @@ char *_strchr(char *s, char c)
 	unsigned int i, cond = 0;
 	char *ptr;
 
-	if (!s)
-		if (c == '\0')
-		{
-			ptr = &s;
-			return (ptr);
-		}
-		else
-			return ('\0');
+	if (s == 0 && c == '\0')
+	{
+		ptr = s;
+		return (ptr);
+	}
+	else
+	{
+		if (s == 0)
+			return (0);
+	}
+
 	for (i = 0; (s[i] != '\0'); i++)
 		if (s[i] == c)
 		{
@@ -32,5 +35,13 @@ char *_strchr(char *s, char c)
 	if (cond)
 		return (ptr);
 	else
-		return ('\0');
+	{
+		if (c == '\0')
+		{
+			ptr = &(s[i]);
+			return (ptr);
+		}
+		else
+			return (0);
+	}
 }
