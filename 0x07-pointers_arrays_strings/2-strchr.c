@@ -19,11 +19,8 @@ char *_strchr(char *s, char c)
 		ptr = s;
 		return (ptr);
 	}
-	else
-	{
-		if (s == 0)
-			return (0);
-	}
+	if (s == 0)
+		return (0);
 
 	for (i = 0; (s[i] != '\0'); i++)
 		if (s[i] == c)
@@ -34,14 +31,10 @@ char *_strchr(char *s, char c)
 		}
 	if (cond)
 		return (ptr);
-	else
+	if (c == '\0')
 	{
-		if (c == '\0')
-		{
-			ptr = &(s[i]);
-			return (ptr);
-		}
-		else
-			return (0);
+		ptr = &(s[i]);
+		return (ptr);
 	}
+	return (0);
 }
