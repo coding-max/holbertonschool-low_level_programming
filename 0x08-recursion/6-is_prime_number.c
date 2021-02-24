@@ -25,11 +25,10 @@ int prime_function(int n, int i)
  */
 int is_prime_number(int n)
 {
+	int i = (n / 2);
+
 	if (n > 2)
-	{
-		int i = (n / 2);
 		return (prime_function(n, i));
-	}
 	if (n < 2)
 		return (0);
 	else
