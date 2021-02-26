@@ -15,7 +15,7 @@ int compare(char *s, int start, int end, int pos, int mid)
 {
 	if ((s[start] == s[end]) && (pos < mid))
 		return (compare(s, start + 1, end - 1, pos + 1, mid));
-	else if (pos > mid)
+	else if (pos >= mid)
 		return (1);
 	else
 		return (0);
