@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - print the name of the program followed by a new line.
- * @argc:
- * @argv:
+ * whatsmyname - print the name of the program followed by a new line.
+ * @argc: idk.
+ * @argv: idk.
  *
  * Return: 0.
  */
 
 
-int main(int argc, char *argv[])
+int whatsmyname(int argc, char *argv[])
 {
 	argc = argc;
 	printf("%s\n", *argv);
