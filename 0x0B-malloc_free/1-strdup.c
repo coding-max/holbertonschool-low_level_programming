@@ -47,9 +47,12 @@ char *_strcpy(char *dest, char *src)
  */
 char *_strdup(char *str)
 {
-	char *aux = malloc(sizeof(char) * (_strlen(str) + 1));
+	char *aux;
 
-	if (aux == NULL || str == NULL)
+	if (str == NULL)
+		return (NULL);
+	aux = malloc(sizeof(char) * (_strlen(str) + 1));
+	if (aux == NULL)
 		return (NULL);
 	return (_strcpy(aux, str));
 }
