@@ -6,7 +6,7 @@
  * @grid: 2 dimensional greid to free.
  * @height: height of array.
  */
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 	int i;
 
