@@ -54,11 +54,14 @@ char *str_concat(char *s1, char *s2)
 	int s1_length = sizeof(char) * _strlen(s1);
 	int s2_length = sizeof(char) * _strlen(s2);
 	char *aux = malloc(s1_length + s2_length + 1);
+	int i, j;
 
 	if (aux == NULL)
 		return (NULL);
-	*aux = '\0';
-	aux = _strcat(aux, s1);
-	aux = _strcat(aux, s2);
+	for (i = 0; s1[i] != '\0'; i++)
+		aux[i] = s1[i];
+	for (j = 0; s2[j] != '\0'; j++, i++)
+		aux[i] = s2[j];
+	aux[i] = '\0';
 	return (aux);
 }
