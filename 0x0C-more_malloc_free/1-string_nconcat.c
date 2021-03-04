@@ -26,19 +26,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (aux == NULL)
 		return (NULL);
 
-        if (s1_len == 0 && s2_len == 0)
+	if (s1 != NULL)
+		for (i = 0; s1[i] != '\0'; i++)
+			aux[i] = s1[i];
+	if (s2 != NULL)
 	{
-		aux[0] = '\0';
-		return (aux);
+		if (n < s2_len)
+			for (j = 0; j < n; j++, i++)
+				aux[i] = s2[j];
+		else
+			for (j = 0; s2[j] != '\0'; j++, i++)
+				aux[i] = s2[j];
 	}
-	for (i = 0; s1[i] != '\0'; i++)
-		aux[i] = s1[i];
-	if (n < s2_len)
-		for (j = 0; j < n; j++, i++)
-			aux[i] = s2[j];
-	else
-		for (j = 0; s2[j] != '\0'; j++, i++)
-			aux[i] = s2[j];
 	aux[i] = '\0';
 	return (aux);
 }
