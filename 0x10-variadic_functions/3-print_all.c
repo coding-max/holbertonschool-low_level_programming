@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 		{'i', print_i},
 		{'f', print_f},
 		{'s', print_s},
-		{NULL, NULL}
+		{'\0', '\0'}
 	};
 	unsigned int i = 0;
 	unsigned int j = 0;
@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (str_arr[j].format_in != NULL)
+		while (str_arr[j].format_in != '\0')
 		{
 			if (str_arr[j].format_in == format[i])
 			{
