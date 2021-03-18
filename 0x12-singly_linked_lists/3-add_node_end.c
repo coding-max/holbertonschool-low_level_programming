@@ -24,18 +24,18 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	new->len = _strlen_recursion(new->str);
-        new->next = NULL;
+	new->next = NULL;
 
-        if (aux)
-        {
-                while (aux->next)
-                        aux = aux->next;
-                aux->next = new;
-        }
-        else 
-        {
-                *head = new;
-        }
+	if (aux)
+	{
+		while (aux->next)
+			aux = aux->next;
+		aux->next = new;
+	}
+	else 
+	{
+		*head = new;
+	}
 
 	return (new);
 }
