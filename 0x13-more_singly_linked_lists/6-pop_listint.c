@@ -7,9 +7,9 @@
  **/
 int pop_listint(listint_t **head)
 {
-	int aux = *head->n;
+	int aux = (*head)->n;
 
-	*head = *head->next;
+	*head = (*head)->next;
 
 	return (aux);
 }
