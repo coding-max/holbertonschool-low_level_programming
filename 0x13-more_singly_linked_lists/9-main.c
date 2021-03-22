@@ -30,7 +30,7 @@ int main(void)
 	insert_nodeint_at_index(&head, 3, 34047);
 	print_listint(head);
 	printf("-----------------\n");
-	insert_nodeint_at_index(&head, 4, 34047);
+	insert_nodeint_at_index(&head, 6, 33454357);
 	print_listint(head);
 	free_listint2(&head);
 	printf("\n\n\n");
