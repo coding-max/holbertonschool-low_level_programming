@@ -7,10 +7,12 @@
  **/
 int pop_listint(listint_t **head)
 {
-	int aux = (*head)->n;
+	int data = (*head)->n;
+	listint_t *first_node = *head;
 
-	*head = (*head)->next;
+	*head = first_node->next;
+	free(first_node);
 
-	return (aux);
+	return (data);
 }
 
