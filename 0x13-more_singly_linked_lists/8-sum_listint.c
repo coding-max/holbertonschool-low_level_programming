@@ -16,5 +16,5 @@ int sum_listint(listint_t *head)
 		node = node->next;
 	}
 
-	return (NULL);
+	return (sum);
 }
