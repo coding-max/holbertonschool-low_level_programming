@@ -9,8 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	char buffer[1024]
+	char buffer[1024];
 	int fd_file_from, fd_file_to;
+	ssize_t end = 0;
 
 	/* check number of argument */
 	if (argc != 3)
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 	fd_file_from = open(argv[1], O_RDONLY);
 	if (fd_file_from < 0)
 	{
-		// PRINT ERROR
+		read_error(argv[1]);
 		exit(98);
 	}
 
@@ -31,7 +32,8 @@ int main(int argc, char *argv[])
 	fd_file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_file_to < 0)
 	{
-		// PRINT ERROR
+		write_error(argv[2]);
+		close_error(from_fd);
 		exit(99);
 	}
 
@@ -42,30 +44,62 @@ int main(int argc, char *argv[])
 		if (end < 0)
 		{
 			read_error(argv[1]);
-			close_fd(fd_file_from);
-			close_fd(fd_file_to);
+			close_error(fd_file_from);
+			close_error(fd_file_to);
 			exit(98);
 		}
 		/* check buffer end of file */
 		if (end == 0)
 			break;
 
-		pichu += end;
 		output = write(fd_file_to, buffer, end);
 		if (output < 0) 
 		{
-			// PRINT ERROR
+			write_error(argv[2]);
+			close_error(from_fd);
+			close_error(to_fd);
 			exit(99);
 		}
 	}
 
-	output = close_fd(fd_file_from);
+	output = close_error(fd_file_from);
 	if (output < 0)
 	{
+		close_error(fd_file_to);
 		exit(100);
 	}
-	output = close_fd(fd_file_to);
+	output = close_error(fd_file_to);
 	if (output < 0)
 		exit(100);
 	return (0);
+}
+
+/**
+ * close_error - check error.
+ * @fd: file descriptor for file to be closed
+ * Return: 1 on success, -1 on failure (status code received from close())
+ */
+int close_error(int fd)
+{
+	if (close(fd) < 0)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+	return (err);
+}
+
+/**
+ * read_error - check error.
+ * @filename: filename.
+ */
+void read_error(char *filename)
+{
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+}
+
+/**
+ * write_error - check error.
+ * @filename: filename.
+ */
+void write_error(char *filename)
+{
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 }
