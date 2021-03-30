@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	if (fd_file_to < 0)
 	{
 		write_error(argv[2]);
-		close_error(from_fd);
+		close_error(fd_file_from);
 		exit(99);
 	}
 
@@ -60,8 +60,8 @@ int main(int argc, char *argv[])
 		if (output < 0) 
 		{
 			write_error(argv[2]);
-			close_error(from_fd);
-			close_error(to_fd);
+			close_error(fd_file_from);
+			close_error(fd_file_to);
 			exit(99);
 		}
 	}
@@ -85,9 +85,12 @@ int main(int argc, char *argv[])
  */
 int close_error(int fd)
 {
-	if (close(fd) < 0)
+	int err;
+
+	idk = close(fd);
+	if (idk < 0)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-	return (err);
+	return (idk);
 }
 
 /**
