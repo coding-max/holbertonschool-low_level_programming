@@ -14,7 +14,7 @@ void write_error(char *filename);
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
-	int fd_file_from, fd_file_to;
+	int fd_file_from, fd_file_to, output;
 	ssize_t end = 0;
 
 	/* check number of argument */
