@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
  */
 int close_error(int fd)
 {
-	int err;
+	int idk;
 
 	idk = close(fd);
 	if (idk < 0)
