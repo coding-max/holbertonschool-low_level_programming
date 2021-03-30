@@ -9,7 +9,7 @@ void write_error(char *filename);
  * main - copies the content of a file to another file.
  * @argc: argument counter.
  * @argv: argument vector.
- * Return: always return 0, or exit 
+ * Return: always return 0, or exit.
  */
 int main(int argc, char *argv[])
 {
@@ -92,7 +92,7 @@ int close_error(int fd)
 }
 
 /**
- * read_error - print the read error. 
+ * read_error - print the read error.
  * @filename: filename.
  */
 void read_error(char *filename)
