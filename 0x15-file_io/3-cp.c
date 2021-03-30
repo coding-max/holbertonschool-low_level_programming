@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 			break;
 
 		output = write(fd_file_to, buffer, end);
-		if (output < 0) 
+		if (output < 0)
 		{
 			write_error(argv[2]);
 			close_error(fd_file_from);
