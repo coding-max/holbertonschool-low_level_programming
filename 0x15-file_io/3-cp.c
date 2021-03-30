@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	char buffer[1024];
 	int fd_file_from, fd_file_to, output;
-	ssize_t end = 0;
+	ssize_t end = 1;
 
 	/* check number of argument */
 	if (argc != 3)
