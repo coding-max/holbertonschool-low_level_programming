@@ -1,9 +1,8 @@
 <div align=center>  
     <img  
     style="text-align:center"  
-    src="https://raw.githubusercontent.com/coding-max/hbtn_config/main/assets/hbtn_logo_low.png"  
+    src="https://raw.githubusercontent.com/coding-max/hbtn_config/main/assets/head_low-level.png"  
     alt="Holberton School"/>  
-    <h1 align="center"> Low level programming & Algorithm </h1>  
 </div>
 
 ### Hatching out  
