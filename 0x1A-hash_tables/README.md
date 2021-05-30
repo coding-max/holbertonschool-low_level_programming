@@ -1,4 +1,6 @@
-### Learning Objectives:
+# 0x1A. C - Hash tables
+
+## Learning Objectives
 
 - What is a hash function  
 - What makes a good hash function  
