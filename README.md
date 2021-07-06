@@ -1,3 +1,4 @@
+<br>
 <div align=center>  
     <img  
     style="text-align:center"  
@@ -26,12 +27,19 @@
 - [0x10](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions). C - Variadic functions  
 - [0x11](https://github.com/coding-max/printf). C - printf  
 - [0x14](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation). C - Bit manipulation  
+- [0x18](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries). C - Dynamic libraries  
+- [0x1C](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x1C-makefiles). C - Makefiles  
 
 ### Data structures and Algorithms
 
 - [0x12](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists). C - Singly linked lists  
 - [0x13](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists). C - More singly linked lists  
+- [0x17](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists). C - Doubly linked lists  
+- [0x19](https://github.com/coding-max/monty/). C - Stacks, Queues - LIFO, FIFO  
+- [0x1A](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables). C - Hash tables  
+- [0x1B](https://github.com/coding-max/sorting_algorithms/). C - Sorting algorithms & Big O  
 
 ### Linux and Unix system programming
 
 - [0x15](https://github.com/coding-max/holbertonschool-low_level_programming/tree/main/0x15-file_io). C - File I/O  
+- [0x16](https://github.com/coding-max/simple_shell/). C - Simple Shell  
