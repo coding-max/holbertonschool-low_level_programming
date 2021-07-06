@@ -1,0 +1,12 @@
+[submodule "0x11-printf"]
+	path = 0x11-printf
+	url = git@github.com:coding-max/printf.git
+[submodule "0x16-simple_shell"]
+	path = 0x16-simple_shell
+	url = git@github.com:coding-max/simple_shell.git
+[submodule "0x19-stacks_queues"]
+	path = 0x19-stacks_queues
+	url = git@github.com:coding-max/monty.git
+[submodule "0x1B-sorting_algorithms"]
+	path = 0x1B-sorting_algorithms
+	url = git@github.com:coding-max/sorting_algorithms.git
