@@ -13,6 +13,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 		return (-1);
 
 	/* It's not what you expected, I still have to do this task */
+	value = value;
 
 	return (-1);
 }

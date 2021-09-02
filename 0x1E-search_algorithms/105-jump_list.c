@@ -15,6 +15,8 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		return (-1);
 
 	/* It's not what you expected, I still have to do this task */
+	size = size;
+	value = value;
 
 	return (-1);
 }

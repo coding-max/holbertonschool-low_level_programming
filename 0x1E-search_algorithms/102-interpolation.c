@@ -15,6 +15,8 @@ int interpolation_search(int *array, size_t size, int value)
 		return (-1);
 
 	/* It's not what you expected, I still have to do this task */
+	size = size;
+	value = value;
 
 	return (-1);
 }
