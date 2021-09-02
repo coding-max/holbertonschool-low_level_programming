@@ -10,7 +10,7 @@
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	if (!list)
-		return (-1);
+		return (list);
 
 	/* It's not what you expected, I still have to do this task */
 	value = value;
